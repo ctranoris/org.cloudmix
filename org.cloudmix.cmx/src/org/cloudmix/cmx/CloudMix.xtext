@@ -1,0 +1,9 @@
+grammar org.cloudmix.cmx.CloudMix with org.eclipse.xtext.common.Terminals
+
+generate cloudMix "http://www.cloudmix.org/cmx/CloudMix"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
